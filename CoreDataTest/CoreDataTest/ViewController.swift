@@ -17,9 +17,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+<<<<<<< HEAD
     
         title = "\"The List\""
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+=======
+        
+        print("xho95")
+        print("Mario")
+>>>>>>> master
     }
 
     override func didReceiveMemoryWarning() {
