@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162059D81D0177C300431CEF /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 162059D71D0177C300431CEF /* SampleData.plist */; };
+		162059DA1D0187CB00431CEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162059D91D0187CB00431CEF /* Images.xcassets */; };
+		162059DD1D0199E800431CEF /* Bowtie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162059DB1D0199E800431CEF /* Bowtie+CoreDataProperties.swift */; };
+		162059DE1D0199E800431CEF /* Bowtie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162059DC1D0199E800431CEF /* Bowtie.swift */; };
 		165C0DCA1D016C02008EC40E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C0DC91D016C02008EC40E /* AppDelegate.swift */; };
 		165C0DCC1D016C02008EC40E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165C0DCB1D016C02008EC40E /* ViewController.swift */; };
 		165C0DCF1D016C02008EC40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165C0DCD1D016C02008EC40E /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162059D71D0177C300431CEF /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
+		162059D91D0187CB00431CEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		162059DB1D0199E800431CEF /* Bowtie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		162059DC1D0199E800431CEF /* Bowtie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bowtie.swift; sourceTree = "<group>"; };
 		165C0DC61D016C02008EC40E /* CoreDataTest_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165C0DC91D016C02008EC40E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165C0DCB1D016C02008EC40E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +87,8 @@
 		165C0DBD1D016C02008EC40E = {
 			isa = PBXGroup;
 			children = (
+				162059DB1D0199E800431CEF /* Bowtie+CoreDataProperties.swift */,
+				162059DC1D0199E800431CEF /* Bowtie.swift */,
 				165C0DC81D016C02008EC40E /* CoreDataTest_2 */,
 				165C0DE01D016C02008EC40E /* CoreDataTest_2Tests */,
 				165C0DEB1D016C02008EC40E /* CoreDataTest_2UITests */,
@@ -103,9 +113,11 @@
 				165C0DCB1D016C02008EC40E /* ViewController.swift */,
 				165C0DCD1D016C02008EC40E /* Main.storyboard */,
 				165C0DD31D016C02008EC40E /* Assets.xcassets */,
+				162059D91D0187CB00431CEF /* Images.xcassets */,
 				165C0DD51D016C02008EC40E /* LaunchScreen.storyboard */,
 				165C0DD81D016C02008EC40E /* Info.plist */,
 				165C0DD01D016C02008EC40E /* CoreDataTest_2.xcdatamodeld */,
+				162059D71D0177C300431CEF /* SampleData.plist */,
 			);
 			path = CoreDataTest_2;
 			sourceTree = "<group>";
@@ -233,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				165C0DD71D016C02008EC40E /* LaunchScreen.storyboard in Resources */,
+				162059DA1D0187CB00431CEF /* Images.xcassets in Resources */,
 				165C0DD41D016C02008EC40E /* Assets.xcassets in Resources */,
+				162059D81D0177C300431CEF /* SampleData.plist in Resources */,
 				165C0DCF1D016C02008EC40E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +276,8 @@
 				165C0DCC1D016C02008EC40E /* ViewController.swift in Sources */,
 				165C0DCA1D016C02008EC40E /* AppDelegate.swift in Sources */,
 				165C0DD21D016C02008EC40E /* CoreDataTest_2.xcdatamodeld in Sources */,
+				162059DE1D0199E800431CEF /* Bowtie.swift in Sources */,
+				162059DD1D0199E800431CEF /* Bowtie+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +504,7 @@
 				165C0DF31D016C02008EC40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		165C0DF41D016C02008EC40E /* Build configuration list for PBXNativeTarget "CoreDataTest_2Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +513,7 @@
 				165C0DF61D016C02008EC40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		165C0DF71D016C02008EC40E /* Build configuration list for PBXNativeTarget "CoreDataTest_2UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				165C0DF91D016C02008EC40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
