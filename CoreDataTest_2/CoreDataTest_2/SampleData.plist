@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Red Bow Tie</string>
+		<key>searchKey</key>
+		<string>R</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>red.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:34:07Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Orange Bow Tie</string>
+		<key>searchKey</key>
+		<string>O</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>orange.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:37:15Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yellow Bow Tie</string>
+		<key>searchKey</key>
+		<string>Y</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>yellow.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:37:54Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Green Bow Tie</string>
+		<key>searchKey</key>
+		<string>G</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>green.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:39:33Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Blue Bow Tie</string>
+		<key>searchKey</key>
+		<string>B</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>blue.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:40:07Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Indigo Bow Tie</string>
+		<key>searchKey</key>
+		<string>I</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>indigo.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:40:59Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Violet Bow Tie</string>
+		<key>searchKey</key>
+		<string>V</string>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>tintColor</key>
+		<dict/>
+		<key>imageName</key>
+		<string>violet.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-03T08:41:30Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>isFavorite</key>
+		<false/>
+	</dict>
+</array>
+</plist>
