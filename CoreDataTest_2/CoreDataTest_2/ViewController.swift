@@ -40,5 +40,19 @@ class ViewController: UIViewController {
     @IBAction func rate(sender: AnyObject) {
     }
     
+    // Insert sample data
+    func insertSampleData() {
+        let fetchRequest = NSFetchRequest(entityName: "Bowtie")
+        fetchRequest.predicate = NSPredicate(format: "searchKey != nil")
+        
+        let count = managedContext.countForFetchRequest(fetchRequest, error: nil)
+        
+        if count > 0 { return }
+        
+        let path = NSBundle.mainBundle().pathForResource("SampleData", ofType: "plist")
+        let dataArray = NSArray(contentOfFile: path!)
+        
+        
+    }
 }
 

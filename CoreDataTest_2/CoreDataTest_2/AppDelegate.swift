@@ -14,28 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        // Save test bow tie
+        if let viewController = self.window!.rootViewController as? ViewController {
+            viewController.managedContext = self.managedObjectContext
+        }
         
-        let entity = NSEntityDescription.entityForName("Bowtie", inManagedObjectContext: managedObjectContext)
-        let bowtie = Bowtie(entity: entity!, insertIntoManagedObjectContext: managedObjectContext)
-        
-        bowtie.name = "My bow tie"
-        bowtie.lastWorn = NSDate()
-        
-        let _ = try? managedObjectContext.save()
-        
-        // Retrieve test bow tie 
-        
-        let request = NSFetchRequest(entityName: "Bowtie")
-        let ties = try! managedObjectContext.executeFetchRequest(request) as! [Bowtie]
-        
-        let sample = ties[0]
-        
-        print("Name: \(sample.name!), Worn: \(sample.lastWorn!)")
         return true
     }
 
