@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let sample = ties[0]
         
-        print("Name: \(sample.name), Worn: \(sample.lastWorn)")
+        print("Name: \(sample.name!), Worn: \(sample.lastWorn!)")
         return true
     }
 
