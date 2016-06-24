@@ -49,6 +49,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func segmentedControl(sender: UISegmentedControl) {
+        let selectedValue = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)
+        let fetchRequest = NSFetchRequest(entityName: "Bowtie")
+        
+        fetchRequest.predicate = NSPredicate(format: "searchKey == %@", selectedValue!)
+        
+        do {
+            let bowties = try managedContext.executeFetchRequest(fetchRequest) as? [Bowtie]
+            
+            currentBowtie = bowties!.last!
+            populate(currentBowtie)
+        } catch (let error as NSError?) {
+            print("Could not fetch \(error), \(error!.userInfo)")
+        }
     }
     
     @IBAction func wear(sender: AnyObject) {
@@ -153,14 +166,18 @@ class ViewController: UIViewController {
     }
     
     func updateRating(numericString: String) {
-        currentBowtie.rating = Double(numericString)
+        let rating = Double(numericString)
+        currentBowtie.rating = NSNumber(double: rating!)
         
         do {
             try managedContext.save()
             populate(currentBowtie)
             
         } catch(let error as NSError?) {
-            print("Could not save \(error), \(error?.userInfo)")
+            if error!.code == NSValidationNumberTooLargeError ||
+               error!.code == NSValidationNumberTooSmallError {
+                rate(currentBowtie)
+            }
         }
     }
 }
