@@ -67,6 +67,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rate(sender: AnyObject) {
+        let alert = UIAlertController(title: "New Rating", message: "Rate this bow tie", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (action: UIAlertAction!) in }
+        let saveAction = UIAlertAction(title: "Save", style: .Default) { (action: UIAlertAction!) in
+            let textField = alert.textFields![0]
+            self.updateRating(textField.text!)
+        }
+        
+        alert.addTextFieldWithConfigurationHandler { (textField: UITextField!) in }
+        alert.addAction(cancelAction)
+        alert.addAction(saveAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     // Insert sample data
@@ -126,7 +139,7 @@ class ViewController: UIViewController {
     func populate(bowtie: Bowtie) {
         imageView.image = UIImage(data: bowtie.photoData!)
         nameLabel.text = bowtie.name
-        ratingLabel.text = "Rating: \(bowtie.rating?.doubleValue)/5"
+        ratingLabel.text = "Rating: \(bowtie.rating!.doubleValue)/5"
         timesWornLabel.text = "# times worn: \(bowtie.timesWorn!.integerValue)"
         
         let dateFormatter = NSDateFormatter()
@@ -137,6 +150,18 @@ class ViewController: UIViewController {
         favoriteLabel.hidden = !bowtie.isFavorite!.boolValue
         
         view.tintColor = bowtie.tintColor as! UIColor
+    }
+    
+    func updateRating(numericString: String) {
+        currentBowtie.rating = Double(numericString)
+        
+        do {
+            try managedContext.save()
+            populate(currentBowtie)
+            
+        } catch(let error as NSError?) {
+            print("Could not save \(error), \(error?.userInfo)")
+        }
     }
 }
 
