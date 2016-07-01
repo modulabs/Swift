@@ -10,7 +10,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>209</integer>
+			<key>green</key>
+			<integer>20</integer>
+			<key>blue</key>
+			<integer>38</integer>
+		</dict>
 		<key>imageName</key>
 		<string>red.png</string>
 		<key>lastWorn</key>
@@ -28,7 +35,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>208</integer>
+			<key>green</key>
+			<integer>78</integer>
+			<key>blue</key>
+			<integer>46</integer>
+		</dict>
 		<key>imageName</key>
 		<string>orange.png</string>
 		<key>lastWorn</key>
@@ -46,7 +60,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>249</integer>
+			<key>green</key>
+			<integer>174</integer>
+			<key>blue</key>
+			<integer>54</integer>
+		</dict>
 		<key>imageName</key>
 		<string>yellow.png</string>
 		<key>lastWorn</key>
@@ -64,7 +85,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>39</integer>
+			<key>green</key>
+			<integer>78</integer>
+			<key>blue</key>
+			<integer>54</integer>
+		</dict>
 		<key>imageName</key>
 		<string>green.png</string>
 		<key>lastWorn</key>
@@ -82,7 +110,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>6</integer>
+			<key>green</key>
+			<integer>19</integer>
+			<key>blue</key>
+			<integer>84</integer>
+		</dict>
 		<key>imageName</key>
 		<string>blue.png</string>
 		<key>lastWorn</key>
@@ -100,7 +135,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>124</integer>
+			<key>green</key>
+			<integer>115</integer>
+			<key>blue</key>
+			<integer>180</integer>
+		</dict>
 		<key>imageName</key>
 		<string>indigo.png</string>
 		<key>lastWorn</key>
@@ -118,7 +160,14 @@
 		<key>rating</key>
 		<real>3.5</real>
 		<key>tintColor</key>
-		<dict/>
+		<dict>
+			<key>red</key>
+			<integer>187</integer>
+			<key>green</key>
+			<integer>36</integer>
+			<key>blue</key>
+			<integer>198</integer>
+		</dict>
 		<key>imageName</key>
 		<string>violet.png</string>
 		<key>lastWorn</key>
