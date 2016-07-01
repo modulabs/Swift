@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         } catch (let error as NSError?) {
             print("Could not fetch \(error), \(error!.userInfo)")
         }
+        print("a")
     }
 
     override func didReceiveMemoryWarning() {
