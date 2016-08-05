@@ -1,15 +1,15 @@
 //
-//  PodTestTests.swift
-//  PodTestTests
+//  RealmTestTests.swift
+//  RealmTestTests
 //
 //  Created by Kim, Min Ho on 2016. 8. 5..
 //  Copyright © 2016년 Void Systems. All rights reserved.
 //
 
 import XCTest
-@testable import PodTest
+@testable import RealmTest
 
-class PodTestTests: XCTestCase {
+class RealmTestTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

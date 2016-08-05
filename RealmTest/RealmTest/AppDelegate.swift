@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PodTest
+//  RealmTest
 //
 //  Created by Kim, Min Ho on 2016. 8. 5..
 //  Copyright © 2016년 Void Systems. All rights reserved.
